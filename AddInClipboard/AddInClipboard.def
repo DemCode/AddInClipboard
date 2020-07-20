@@ -1,0 +1,6 @@
+LIBRARY    "AddInClipboard"
+
+EXPORTS
+GetClassObject
+DestroyObject
+GetClassNames
