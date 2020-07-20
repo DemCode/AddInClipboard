@@ -1,8 +1,8 @@
 #pragma once
 
-#include <ComponentBase.h>
-#include <AddInDefBase.h>
-#include <IMemoryManager.h>
+#include "ComponentBase.h"
+#include "AddInDefBase.h"
+#include "IMemoryManager.h"
 
 class CAddInClipboard : public IComponentBase
 {

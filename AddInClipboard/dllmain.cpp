@@ -4,9 +4,9 @@
 
 #include <windows.h>
 
-#include <ComponentBase.h>
-#include <AddInDefBase.h>
-#include <IMemoryManager.h>
+#include "ComponentBase.h"
+#include "AddInDefBase.h"
+#include "IMemoryManager.h"
 
 #include "CAddInClipboard.h"
 

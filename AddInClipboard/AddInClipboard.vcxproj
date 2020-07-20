@@ -69,22 +69,12 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>C:\Users\Dmitry\source\VNCOMPS\VNCOMP83\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\Dmitry\source\VNCOMPS\VNCOMP83\lib;$(LibraryPath)</LibraryPath>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <IncludePath>C:\Users\Dmitry\source\VNCOMPS\VNCOMP83\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\Dmitry\source\VNCOMPS\VNCOMP83\lib;$(LibraryPath)</LibraryPath>
-  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>C:\Users\Dmitry\source\VNCOMPS\VNCOMP83\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\Dmitry\source\VNCOMPS\VNCOMP83\lib;$(LibraryPath)</LibraryPath>
     <TargetName>$(ProjectName)64</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <IncludePath>C:\Users\Dmitry\source\VNCOMPS\VNCOMP83\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\Dmitry\source\VNCOMPS\VNCOMP83\lib;$(LibraryPath)</LibraryPath>
     <TargetName>$(ProjectName)64</TargetName>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -152,7 +142,12 @@
     <ClCompile Include="dllmain.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AddInDefBase.h" />
     <ClInclude Include="CAddInClipboard.h" />
+    <ClInclude Include="com.h" />
+    <ClInclude Include="ComponentBase.h" />
+    <ClInclude Include="IMemoryManager.h" />
+    <ClInclude Include="types.h" />
   </ItemGroup>
   <ItemGroup>
     <Xml Include="MANIFEST.xml">
